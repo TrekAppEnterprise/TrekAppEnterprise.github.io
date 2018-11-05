@@ -4,7 +4,7 @@ body {
 form {
     display: inline-block;
 }
-#form-top {
+.form-top {
    color: red; 
 }
 p {
