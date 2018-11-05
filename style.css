@@ -4,11 +4,10 @@ body {
 form {
     display: inline-block;
 }
-.form-top {
-   color: red; 
-}
+
 p {
  text-align: center;
+ color: red;
 }
 aside {
     background: #1f8dd6; /* same color as selected state on site menu */
