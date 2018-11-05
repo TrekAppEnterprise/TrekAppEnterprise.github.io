@@ -22,7 +22,7 @@
    <!-- Style The Contact Form How Ever You Prefer -->
    <link rel="stylesheet" href="style.css">
 
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="goldenratiorobotics@gmail.com"
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)" class="gform pure-form pure-form-stacked" method="POST" data-email="goldenratiorobotics@gmail.com"
   action="https://script.google.com/macros/s/AKfycby_T1ElJKWEH7A8o8AVln14Vq0fMnMUXjhVZSNt/exec">
     <!-- change the form action to your script url -->
 
@@ -45,22 +45,21 @@
 
       <fieldset class="pure-group">
         <label for="Auto Points">Auto Points: </label>
-        <input name="Auto Points" placeholder="Auto Points" />
+        <input id="a" name="Auto Points" placeholder="Auto Points" />
       </fieldset>
 		 
      <fieldset class="pure-group">
         <label for="TeleOp Points">TeleOp Points: </label>
-        <input name="TeleOp Points" placeholder="TeleOp Points" />
+        <input id="b" name="TeleOp Points" placeholder="TeleOp Points" />
       </fieldset>
 		 
       <fieldset class="pure-group">
         <label for="EndGame Points">EndGame Points: </label>
-        <input name="EndGame Points" placeholder="EndGame Points" />
+        <input id="c" name="EndGame Points" placeholder="EndGame Points" />
       </fieldset>
 		 
       <fieldset class="pure-group">
-        <label for="Total Score">Total Score: </label>
-        <input name="Total Score" placeholder="Score" />
+        <output name="x" for="a b"></output>
       </fieldset>
 
       <fieldset class="pure-group">
