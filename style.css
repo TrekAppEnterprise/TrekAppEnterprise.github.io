@@ -10,7 +10,7 @@ p {
  color: red;
 }
 aside {
-    background: ffff00; /* same color as selected state on site menu */
+    background: #ffff00; /* same color as selected state on site menu */
     padding: 0.3em 1em;
     border-radius: 3px;
     color: #fff;
