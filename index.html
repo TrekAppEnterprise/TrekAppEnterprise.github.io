@@ -17,24 +17,6 @@
        </p>
    </aside>
 <h2>TrekApp: Enterprise</h2>
-<form>
-  Team Name:<br>
-  <input type="text" name="Name"><br></br>
-  Team Number:<br>
-  <input type="text" name="num"> </br></br>
-	Auto Points:<br>
-  <input type="text" name="autopts"> </br></br>
-	TeleOp Points:<br>
-  <input type="text" name="telepts"> </br></br>
-	EndGame Points:<br>
-  <input type="text" name="endpts"> </br></br>
-	Total Score:<br>
-  <input type="text" name="totalpts"> </br></br>
-	Comments:<br>
-  <input type="text" name="comments"> </br></br>
-	<input type="submit" name="submit">
-</form>
-
 <!-- START HERE -->
    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -45,29 +27,41 @@
   action="https://script.google.com/macros/s/AKfycby_T1ElJKWEH7A8o8AVln14Vq0fMnMUXjhVZSNt/exec">
     <!-- change the form action to your script url -->
 
-    <div class="form-elements">
+	 <div class="form-elements">
       <fieldset class="pure-group">
-        <label for="name">Name: </label>
-        <input id="name" name="name" placeholder="What your Mom calls you" />
+        <label for="Team Name">Team Name: </label>
+        <input id="name" name="name" placeholder="Enter Name" />
       </fieldset>
 
       <fieldset class="pure-group">
-        <label for="message">Message: </label>
+        <label for="Team Number">Team Number: </label>
         <textarea id="message" name="message" rows="10"
-        placeholder="Tell us what's on your mind..."></textarea>
+        placeholder="Enter Number"></textarea>
       </fieldset>
 
       <fieldset class="pure-group">
-        <label for="email"><em>Your</em> Email Address:</label>
-        <input id="email" name="email" type="email" value=""
-        required placeholder="your.name@email.com"/>
-        <span class="email-invalid" style="display:none">
-          Must be a valid email address</span>
+        <label for="Auto Points">Auto Points: </label>
+        <input name="Auto Points" placeholder="Auto Points" />
       </fieldset>
-
+		 
+     <fieldset class="pure-group">
+        <label for="TeleOp Points">TeleOp Points: </label>
+        <input name="TeleOp Points" placeholder="TeleOp Points" />
+      </fieldset>
+		 
       <fieldset class="pure-group">
-        <label for="color">Favourite Color: </label>
-        <input id="color" name="color" placeholder="green" />
+        <label for="EndGame Points">Auto Points: </label>
+        <input name="color" placeholder="EndGame Points" />
+      </fieldset>
+		 
+      <fieldset class="pure-group">
+        <label for="Total Score">Total Score: </label>
+        <input name="Score" placeholder="Score" />
+      </fieldset>
+		 
+      <fieldset class="pure-group">
+        <label for="Comments">Comments: </label>
+        <input name="Comments" placeholder="Comments" />
       </fieldset>
 
       <button class="button-success pure-button button-xlarge">
