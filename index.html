@@ -1,85 +1,16 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FTC Rover Ruckus 2018-19">
-  <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/878010172441993216/OijG9WQH_400x400.jpg" />
-  <title>TrekApp: Enterprise</title>
-</head>
-
-<body>
-  <h2 class="content-head is-center">TrekApp: Enterprise</h2>
-  <aside>
-       <p>
-	       Fill Out Form With Info On Other Teams! </br>
-	       <strong>WARNING: FACTUAL DATA ONLY</strong>
-	</p>
-   </aside>
-<!-- START HERE -->
-   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   <!-- Style The Contact Form How Ever You Prefer -->
-   <link rel="stylesheet" href="style.css">
-
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="goldenratiorobotics@gmail.com"
-  action="https://script.google.com/macros/s/AKfycby_T1ElJKWEH7A8o8AVln14Vq0fMnMUXjhVZSNt/exec">
-    <!-- change the form action to your script url -->
-
-	 <div class="form-elements">
-      <fieldset class="pure-group">
-        <label for="Team Name">Team Name: </label>
-        <input id="name" name="Team Name" placeholder="Enter Name" />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="Team Number">Team Number: </label>
-        <input type="number" name="Team Number"
-        placeholder="Enter Number"></input>
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="Auto Points">Auto Points: </label>
-        <input name="Auto Points" placeholder="Auto Points" />
-      </fieldset>
-		 
-     <fieldset class="pure-group">
-        <label for="TeleOp Points">TeleOp Points: </label>
-        <input name="TeleOp Points" placeholder="TeleOp Points" />
-      </fieldset>
-		 
-      <fieldset class="pure-group">
-        <label for="EndGame Points">Auto Points: </label>
-        <input name="EndGame Points" placeholder="EndGame Points" />
-      </fieldset>
-		 
-      <fieldset class="pure-group">
-        <label for="Total Score">Total Score: </label>
-        <input name="Total Score" placeholder="Score" />
-      </fieldset>
-		 
-      <fieldset class="pure-group">
-        <label for="Comments">Comments: </label>
-	<textarea id="message" name="Comments" placeholder="Comments" rows="10" />
-	</textarea>
-      </fieldset>
-
-      <button class="button-success pure-button button-xlarge" style="text-align:center;">
-        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-    </div>
-
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div class="thankyou_message" style="display:none;">
-	    <h2><strong>Success!</strong></br></h2>
-        <p>Data Has Been Recorded <a href="https://docs.google.com/spreadsheets/d/104W_pY1xsfaMj4-_s4wAIWglQ9cyrbqzctxR5SDgXVY/edit#gid=0">here</a></p>
-    </div>
-
-  </form>
-
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="form-submission-handler.js"></script>
-<!-- END -->
-
-</body>
-</html>
+<label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "GoldenPhi17";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="main.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
