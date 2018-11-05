@@ -11,7 +11,7 @@
 <body>
   <h2 class="content-head is-center">TrekApp: Enterprise</h2>
   <aside>
-       <p>
+       <p id="form-top">
 	       Fill Out Form With Info On Other Teams! </br>
 	       <strong>WARNING: FACTUAL DATA ONLY</strong>
 	</p>
@@ -26,7 +26,12 @@
   action="https://script.google.com/macros/s/AKfycby_T1ElJKWEH7A8o8AVln14Vq0fMnMUXjhVZSNt/exec">
     <!-- change the form action to your script url -->
 
-	 <div class="form-elements">
+	<div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="Competition Date">Competition Date: </label>
+        <input type="date" name="Competition Date"></input>
+      </fieldset>
+
       <fieldset class="pure-group">
         <label for="Team Name">Team Name: </label>
         <input id="name" name="Team Name" placeholder="Enter Name" />
@@ -36,12 +41,6 @@
         <label for="Team Number">Team Number: </label>
         <input type="number" name="Team Number"
         placeholder="Enter Number"></input>
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="Competition Date">Competition Date: </label>
-        <input type="date" name="Competition Date"
-        placeholder="Enter Date"></input>
       </fieldset>
 
       <fieldset class="pure-group">
@@ -62,6 +61,11 @@
       <fieldset class="pure-group">
         <label for="Total Score">Total Score: </label>
         <input name="Total Score" placeholder="Score" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="Personal Rating">Personal Rating: </label>
+        <input type="number" name="Personal Rating"></input>
       </fieldset>
 		 
       <fieldset class="pure-group">
