@@ -15,9 +15,11 @@ var pass1="GoldVulcanSalute17";
 password=prompt('Enter Password:',' ');
 if (password==pass1)
 alert('Correct password!');
+window.location="verify.html";
 else
 {
-window.location="verify.html";
+  alert("Incorrect!");
+  window.location="fail.html";
 }
 //-->
 </script>
