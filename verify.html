@@ -16,7 +16,9 @@
     </form>
     <script>
         function myFunction() {
+        if (grecaptcha.getResponse().length === 0) {
             window.location="home.html";
+            }
         }
     </script>
 </body>
