@@ -90,7 +90,7 @@
 	</textarea>
       </fieldset>
 
-      <button class="button-success pure-button button-xlarge" style="text-align:center;">
+      <button class="button-success pure-button button-xlarge" style="text-align:center;" onclick="myFunction()">
         <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
     </div>
 
@@ -113,6 +113,11 @@ grecaptcha.execute('6LeMG3kUAAAAAGDxURoYKmvc5EFo9B68iHyUHFFv', {action: 'action_
 // Verify the token on the server.
 });
 });
+</script>
+<script>
+function myFunction() {
+window.location="success.html";
+}
 </script>
 </body>
 </html>
