@@ -1,29 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="FTC Rover Ruckus 2018-19">
-<link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/878010172441993216/OijG9WQH_400x400.jpg" />
-<title>TrekApp: Enterprise</title>
-</head>
-<body>
-  <script language="JavaScript">
-<!--hide
-var password;
-var pass1="GoldVulcanSalute17";
-password=prompt('Enter Password:',' ');
-if (password==pass1) 
-{
-alert('Correct password!');
-window.location="verify.html";
-}
-else
-{
-alert("Incorrect!");
-window.location="fail.html";
-}
-//-->
-</script>
-</body>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FTC Rover Ruckus 2018-19">
+  <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/878010172441993216/OijG9WQH_400x400.jpg" />
+  <title>TrekApp: Enterprise</title>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="945640807903-2c229euc9r5ctqe9gnquc178cusk2jfg.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <title>Sign In</title>
+    
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+        window.location="home.html";
+      };
+    </script>
+  </body>
 </html>
