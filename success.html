@@ -8,6 +8,7 @@
     <meta name="description" content="FTC Rover Ruckus 2018-19">
   <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/878010172441993216/OijG9WQH_400x400.jpg" />
   <title>Success!</title>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   <h2 class="content-head is-center">TrekApp: Enterprise</h2>
@@ -23,11 +24,22 @@
    <!-- Style The Contact Form How Ever You Prefer -->
    <link rel="stylesheet" href="style.css">
 <!-- Customise the Thankyou Message People See when they submit the form: -->
+   <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LfBG3kUAAAAANfj5kG68GYS0syAzt1u7CYgZBnm" data-callback="enableBtn"></div>
+      <br/>
+      <input type="button" value="Submit" id="button1">
+    </form>
    <h2><strong>Success!</strong></br></h2>
    <p>Data Has Been Recorded <a href="https://docs.google.com/spreadsheets/d/104W_pY1xsfaMj4-_s4wAIWglQ9cyrbqzctxR5SDgXVY/edit#gid=0" rel="noopener noreferrer" target="_blank">here</a></p>
    <a href="/home.html" class="button">Resubmit The Form Here</a>
 </br>
 </br>
 <a href="https://goldenratiorobotics.com/" class="button" rel="noopener noreferrer" target="_blank">Visit Our Website Here</a>
+<script>
+function enableBtn(){
+document.getElementById("button1").disabled = false;
+window.location="#verified";
+}
+</script>
 </body>
 </html>
