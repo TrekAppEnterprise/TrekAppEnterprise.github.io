@@ -1,5 +1,6 @@
 iframe {
     display: block;       /* iframes are inline by default */
+    margin: auto;
 }
 #addMore {
   font: bold 11px Arial;
