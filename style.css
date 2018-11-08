@@ -1,14 +1,12 @@
 body {
     margin: 0;
 }
-.banner {
-    height: 30px;
-}
 iframe {
-    display: block;
-    border: none;
-    height: calc(100vh - 30px);
-    width: 100%;
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
 }
 #addMore {
   font: bold 11px Arial;
