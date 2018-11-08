@@ -32,7 +32,11 @@
 <script>
 function enableBtn(){
 document.getElementById("button1").disabled = false;
-window.location="success.html";
+}
+if (grecaptcha.getResponse() == ""){
+    alert("You can't proceed!");
+} else {
+    window.location="success.html";
 }
 </script>
 </body>
