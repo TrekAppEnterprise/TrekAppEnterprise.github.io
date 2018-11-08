@@ -1,3 +1,15 @@
+body {
+    margin: 0;
+}
+.banner {
+    height: 30px;
+}
+iframe {
+    display: block;
+    border: none;
+    height: calc(100vh - 30px);
+    width: 100%;
+}
 #addMore {
   font: bold 11px Arial;
   text-decoration: none;
