@@ -28,44 +28,59 @@
   <form oninput="Score.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)" class="gform pure-form pure-form-stacked" method="POST" data-email="goldenratiorobotics@gmail.com"
   action="https://script.google.com/macros/s/AKfycbyDMkJZW7zYHAVztWCr4iOz4TnglJHvPtDNKNUwR9wjePDAbd0/exec">
     <!-- change the form action to your script url -->
-
+	
+	<h2>Competition Date</h2>
 	<div class="form-elements">
       <fieldset class="pure-group">
         <label for="Competition Date">Competition Date: </label>
         <input name="Competition Date" placeholder="Enter Date"></input>
       </fieldset>
-
+	<h2>Team Name</h2>
       <fieldset class="pure-group">
         <label for="Team Name">Team Name: </label>
         <input name="Team Name" placeholder="Enter Name" />
       </fieldset>
-
+	<h2>Team Number</h2>
       <fieldset class="pure-group">
         <label for="Team Number">Team Number: </label>
         <input name="Team Number"
         placeholder="Enter Number"></input>
       </fieldset>
-
-      <fieldset class="pure-group">
-        <label for="Alliance Color">Alliance Color: </label>
-        <input name="Alliance Color"
-        placeholder="Enter Color"></input>
-      </fieldset>
-
+	<h2>Match Number</h2>
       <fieldset class="pure-group">
         <label for="Match Number">Match Number: </label>
         <input name="Match Number"
         placeholder="Enter Match Number"></input>
       </fieldset>
-
+	<h2>Alliance Color</h2>
       <fieldset class="pure-group">
-        <label for="Auto Points">Auto Points: </label>
-        <input id="a" name="Auto Points" placeholder="Auto Points" />
+        <label for="Alliance Color">Alliance Color: </label>
+        <input name="Alliance Color"
+        placeholder="Enter Color"></input>
       </fieldset>
-		 
+	<h2>Auto Tasks</h2>
+      <fieldset class="pure-group">
+        <label for="Auto Tasks">Auto Points: </label>
+        <input type="checkbox" value="Landing">Landing</input>
+	<input type="checkbox" value="Sampling">Sampling</input>
+	<input type="checkbox" value="Team Marker Depot Side">Team Marker From Depot Side</input>
+	<input type="checkbox" value="Team Marker Crater Side">Team Marker From Crater Side</input>
+	<input type="checkbox" value="Parking Depot Side">Parking From Depot Side</input>
+	<input type="checkbox" value="Parking Crater Side">Parking From Crater Side</input>
+      </fieldset>
+	<fieldset class="pure-group">
+        <label for="Auto Tasks">Auto Points: </label>
+        <input type="checkbox" value="Elements In Depot">Elements In Depot</input>
+	<input type="checkbox" value="Elements In Lander">Elements In Lander</input>
+      </fieldset>
+	<fieldset class="pure-group">
+        <label for="Auto Points">Auto Points: </label>
+	<input id="a" name="Auto Points" placeholder="Auto Points" />
+      </fieldset>
+	<h2>Drive Points</h2> 
      <fieldset class="pure-group">
-        <label for="TeleOp Points">TeleOp Points: </label>
-        <input id="b" name="TeleOp Points" placeholder="TeleOp Points" />
+        <label for="Drive Points">Drive Points: </label>
+        <input id="b" name="Drive Points" placeholder="TeleOp Points" />
       </fieldset>
 		 
       <fieldset class="pure-group">
