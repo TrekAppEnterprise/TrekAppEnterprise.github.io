@@ -32,35 +32,35 @@
 	<h2>Competition Date</h2>
 	<div class="form-elements">
       <fieldset class="pure-group">
-        <label for="Competition Date">Competition Date: </label>
+        <label for="Competition Date"></label>
         <input name="Competition Date" placeholder="Enter Date"></input>
       </fieldset>
 	<h2>Team Name</h2>
       <fieldset class="pure-group">
-        <label for="Team Name">Team Name: </label>
+        <label for="Team Name"></label>
         <input name="Team Name" placeholder="Enter Name" />
       </fieldset>
 	<h2>Team Number</h2>
       <fieldset class="pure-group">
-        <label for="Team Number">Team Number: </label>
+        <label for="Team Number"></label>
         <input name="Team Number"
         placeholder="Enter Number"></input>
       </fieldset>
 	<h2>Match Number</h2>
       <fieldset class="pure-group">
-        <label for="Match Number">Match Number: </label>
+        <label for="Match Number"></label>
         <input name="Match Number"
         placeholder="Enter Match Number"></input>
       </fieldset>
 	<h2>Alliance Color</h2>
       <fieldset class="pure-group">
-        <label for="Alliance Color">Alliance Color: </label>
+        <label for="Alliance Color"></label>
         <input name="Alliance Color"
         placeholder="Enter Color"></input>
       </fieldset>
 	<h2>Auto Tasks</h2>
       <fieldset class="pure-group">
-        <label for="Auto Tasks">Auto Points: </label>
+        <label for="Auto Tasks"></label>
         <input type="checkbox" value="Landing">Landing</input>
 	<input type="checkbox" value="Sampling">Sampling</input>
 	<input type="checkbox" value="Team Marker Depot Side">Team Marker From Depot Side</input>
@@ -68,10 +68,18 @@
 	<input type="checkbox" value="Parking Depot Side">Parking From Depot Side</input>
 	<input type="checkbox" value="Parking Crater Side">Parking From Crater Side</input>
       </fieldset>
-	<fieldset class="pure-group">
-        <label for="Auto Tasks">Auto Points: </label>
+	<h2>Drive Tasks</h2>
+      <fieldset class="pure-group">
+        <label for="Drive Tasks">Auto Points: </label>
         <input type="checkbox" value="Elements In Depot">Elements In Depot</input>
 	<input type="checkbox" value="Elements In Lander">Elements In Lander</input>
+      </fieldset>
+	<h2>EndGame Tasks</h2>
+      <fieldset class="pure-group">
+        <label for="EndGame Tasks">EndGame Tasks: </label>
+        <input type="checkbox" value="Latching">Latching</input>
+	<input type="checkbox" value="Partly In Crater">Partly In Crater</input>
+	<input type="checkbox" value="Completely In Crater">Completely In Crater</input>
       </fieldset>
 	<h2>Auto Points></h2>
       <fieldset class="pure-group">
@@ -83,10 +91,10 @@
         <label for="Drive Points">Drive Points: </label>
         <input id="b" name="Drive Points" placeholder="Drive Points" />
       </fieldset>
-	<h2>EndGame Tasks</h2>
+	<h2>EndGame Points</h2>
       <fieldset class="pure-group">
-        <label for="EndGame Tasks">EndGame Tasks: </label>
-        <input placeholder="EndGame Tasks" />
+        <label for="EndGame Points">EndGame Points: </label>
+        <input id="c" name="EndGame Points" placeholder="EndGame Points" />
       </fieldset>
 	<h2>Points In Depot</h2> 
      <fieldset class="pure-group">
@@ -97,11 +105,6 @@
      <fieldset class="pure-group">
         <label for="Points In Lander">Points In Lander: </label>
         <input placeholder="Points In Lander" />
-      </fieldset>
-	<h2>EndGame Points</h2>
-      <fieldset class="pure-group">
-        <label for="EndGame Points">EndGame Points: </label>
-        <input id="c" name="EndGame Points" placeholder="EndGame Points" />
       </fieldset>
 	<h2>Total Score</h2> 
       <fieldset class="pure-group">
@@ -114,13 +117,13 @@
         <label for="Personal Rating">Personal Rating: </label>
         <input name="Personal Rating" placeholder="Rating"></input>
       </fieldset>
-
+	<h2>Strategy</h2>
       <fieldset class="pure-group">
         <label for="Strategy">Strategy: </label>
 	<textarea id="message" name="Strategy" placeholder="Strategy" rows="10" />
 	</textarea>
       </fieldset>
-		 
+	<h2>Comments</h2> 
       <fieldset class="pure-group">
         <label for="Comments">Comments: </label>
 	<textarea id="message" name="Comments" placeholder="Comments" rows="10" />
