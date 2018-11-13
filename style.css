@@ -34,6 +34,7 @@ body {
 }
 form {
     display: inline-block;
+    background-color: black;
 }
 h2 {
     color: cyan;
@@ -53,6 +54,7 @@ textarea {
   width: 100%;
 }
 .content-head {
+  background-color: black;
   color: yellow;
   font-family: Verdana, Helvetica, sans-serif;
   font-weight: 400;
