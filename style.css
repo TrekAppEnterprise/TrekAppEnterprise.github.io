@@ -49,6 +49,7 @@ textarea {
   width: 100%;
 }
 .content-head {
+  font-family: "Ubuntu";
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
