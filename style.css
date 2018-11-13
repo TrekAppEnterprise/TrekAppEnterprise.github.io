@@ -28,11 +28,15 @@ iframe {
   border-left: 1px solid #CCCCCC;
 }
 body {
+    background-color: black;
     text-align: center;
     margin: 0;
 }
 form {
     display: inline-block;
+}
+h2 {
+    color: cyan;
 }
 p {
  text-align: center;
