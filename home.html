@@ -1,4 +1,4 @@
----
+    ---
 ---
 <!doctype html>
 <html lang="en">
@@ -16,26 +16,34 @@
 
   <body style="background-color:black;">
 	  
-    <div class="w3-sidebar w3-cyan w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-    <button class="w3-bar-item w3-button w3-large"
-    onclick="w3_close()">Close &times;</button>
-    <button class="w3-bar-item w3-button" onclick="logIn()"><i class="fa fa-google"></i>LogIn</button>
-    <button class="w3-bar-item w3-button" onclick="logOut()"><i class="fa fa-google"></i>Logout</button>
-    <a href="mailto:goldenratiorobotics@gmail.com" class="button">Contact Us</a>
-  </div>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<div id="main">
-
-<div class="w3-cyan">
-  <button id="openNav" class="w3-button w3-cyan w3-xlarge" onclick="w3_open()">&#9776;</button>
-  <div class="w3-container">
-    <h1>My Page</h1>
-  </div>
-</div>
-
-  <div class="w3-cyan">
-    <button id="openNav" class="w3-button w3-cyan w3-xlarge" onclick="w3_open()">&#9776;</button>
-  </div>
+    <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+		    <li>
+			<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+		    </li>
+		    <li>
+    			<button class="w3-bar-item w3-button" onclick="logIn()"><i class="fa fa-google"></i>LogIn</button>
+		    </li>
+		    <li>
+    			<button class="w3-bar-item w3-button" onclick="logOut()"><i class="fa fa-google"></i>Logout</button>
+		    </li>
+		    <li>
+    			<a href="mailto:goldenratiorobotics@gmail.com" class="button">Contact Us</a>
+		    </li>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
 
   <!-- Sidebar -->
   <div class="w3-sidebar w3-cyan w3-bar-block" style="width:25%;right:0;">
