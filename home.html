@@ -15,9 +15,13 @@
 </head>
 
 <body style="background-color:black;">
-  <!-- Sidebar -->
-  <div class="w3-sidebar w3-cyan w3-bar-block" style="width:25%">
-  </div>
+  <div class="w3-sidebar w3-cyan w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <button class="w3-bar-item w3-button" onclick="logIn()"><i class="fa fa-google"></i>LogIn</button>
+  <button class="w3-bar-item w3-button" onclick="logOut()"><i class="fa fa-google"></i>Logout</button>
+  <a href="mailto:goldenratiorobotics@gmail.com" class="button">Contact Us</a>
+</div>
 
   <!-- Sidebar -->
   <div class="w3-sidebar w3-cyan w3-bar-block" style="width:25%;right:0;">
@@ -141,6 +145,12 @@ grecaptcha.execute('6LeMG3kUAAAAAGDxURoYKmvc5EFo9B68iHyUHFFv', {action: 'action_
 <script>
 function myFunction() {
 window.location="success.html";
+}
+function logOut(){
+document.location.href = "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://ftctrekapp.cf";
+}
+function logIn(){
+document.location.href = "https://ftctrekapp.cf/index.html";
 }
 </script>
 </body>
