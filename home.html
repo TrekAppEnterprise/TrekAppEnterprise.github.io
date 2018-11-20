@@ -15,6 +15,7 @@
 </head>
 
   <body style="background-color:black;">
+	  
     <div class="w3-sidebar w3-cyan w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
     <button class="w3-bar-item w3-button w3-large"
     onclick="w3_close()">Close &times;</button>
@@ -23,8 +24,17 @@
     <a href="mailto:goldenratiorobotics@gmail.com" class="button">Contact Us</a>
   </div>
 
-  <div class="w3-teal">
-    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+<div id="main">
+
+<div class="w3-cyan">
+  <button id="openNav" class="w3-button w3-cyan w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+  <div class="w3-cyan">
+    <button id="openNav" class="w3-button w3-cyan w3-xlarge" onclick="w3_open()">&#9776;</button>
   </div>
 
   <!-- Sidebar -->
@@ -157,6 +167,7 @@ function logIn(){
 document.location.href = "https://ftctrekapp.cf/index.html";
 }
 <script>
+<script>
 function w3_open() {
   document.getElementById("main").style.marginLeft = "25%";
   document.getElementById("mySidebar").style.width = "25%";
@@ -168,7 +179,6 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
 }
-</script>
 </script>
 </body>
 </html>
