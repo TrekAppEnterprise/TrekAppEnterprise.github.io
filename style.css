@@ -81,8 +81,8 @@ textarea {
 .button-link {
     height:60px;
     padding: 10px 15px;
-    background: #4479BA;
-    color: #FFF;
+    background: blue;
+    color: white;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
