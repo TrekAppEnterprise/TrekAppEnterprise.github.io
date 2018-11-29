@@ -20,33 +20,31 @@
   <body style="background-color:black;">
 	  
 	  <style>
-
 .sidenav {
     height: 100%;
-    width: 160px;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #2f4f4f;
     overflow-x: hidden;
-    padding-top: 20px;
+    transition: 0.5s;
+    padding-top: 60px;
 }
-
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     background-color: #0b6ed8;
     color: #ffffff;
     display: block;
+    transition: 0.3s;
 }
-		  
 .sidenav a:hover {
     color: #000000;
     background-color: #2583db;
 }
-
 .sidenav .closebtn {
     background-color: #2f4f4f;
     position: absolute;
@@ -65,15 +63,9 @@
     font-size: 36px;
     margin-left: 50px;
 }
-		  
-.main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-}
-
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
 </head>
@@ -86,8 +78,7 @@
   <a class="button-link" href="mailto:goldenratiorobotics@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Contact Us</a>
 </div>
 
-<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776</span><br/><br/><br/>
-
+<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776</span>
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -97,8 +88,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-
-<div class="main">
+	
   <h2 class="content-head is-center">TrekApp: Enterprise</h2>
   <aside>
        <p class="form-top">
@@ -195,8 +185,8 @@ function closeNav() {
       <fieldset class="pure-group">
         <label for="Reported Points"></label>
 	<input name="Reported Points" placeholder="Reported Points" />
-      </fieldset>
-	<h3>Documented By:</h3>
+      </fieldset><br/><br/>
+	<h4>Documented By:</h4>
       <fieldset class="pure-group">
         <label for="email"></label>
 	<input id="email" name="email" placeholder="Enter Email" />
@@ -205,8 +195,8 @@ function closeNav() {
       <button class="button-success pure-button button-xlarge" style="text-align:center;" onclick="myFunction()">
         <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
     </div>
+
   </form>
-<div>
 
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript"
