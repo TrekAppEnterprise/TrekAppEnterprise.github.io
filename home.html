@@ -46,20 +46,19 @@
     background-color: #2583db;
 }
 .sidenav .closebtn {
-    background-color: #2f4f4f;
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-		  
-.sidenav .closebtn:hover {
-    background-color: white;
-    position: absolute;
-    color: #808080;
-    margin-left: 50px;
-    border-radius: 50%;
+  position: absolute;
+  display:block;
+  box-sizing:border-box;
+  width:20px;
+  height:20px;
+  border-width:3px;
+  border-style: solid;
+  border-color:red;
+  border-radius:100%;
+  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+  background-color:red;
+  box-shadow:0px 0px 5px 2px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
 }
 .openNav {
     border-radius: 25px;
