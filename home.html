@@ -45,67 +45,18 @@
     color: #000000;
     background-color: #2583db;
 }
-
-.closebtn {
-  display: inline-block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 0.75em;
-  height: 0.75em;
-  position: relative;
-  border: none;
-  -webkit-border-radius: 1em;
-  border-radius: 1em;
-  font: normal 8em/normal Arial, Helvetica, sans-serif;
-  color: rgba(0,0,0,1);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  background: #1abc9c;
+.sidenav .closebtn {
+    background-color: #2f4f4f;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
 }
-
-.closebtn::before {
-  display: inline-block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 0.45em;
-  height: 0.1em;
-  position: absolute;
-  content: "";
-  top: 0.33em;
-  left: 0.155em;
-  border: none;
-  font: normal 100%/normal Arial, Helvetica, sans-serif;
-  color: rgba(0,0,0,1);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  background: #ffffff;
-  text-shadow: none;
-  -webkit-transform: rotateZ(45deg)   ;
-  transform: rotateZ(45deg)   ;
-}
-
-.closebtn::after {
-  display: inline-block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 0.45em;
-  height: 0.1em;
-  position: absolute;
-  content: "";
-  top: 0.33em;
-  left: 0.155em;
-  border: none;
-  font: normal 100%/normal Arial, Helvetica, sans-serif;
-  color: rgba(0,0,0,1);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  background: #ffffff;
-  text-shadow: none;
-  -webkit-transform: rotateZ(-45deg)   ;
-  transform: rotateZ(-45deg)   ;
+		  
+.sidenav .closebtn:hover {
+    position: absolute;
+    color: #808080;
 }
 .openNav {
     border-radius: 25px;
@@ -127,7 +78,7 @@
 <body>
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a><br/>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br/>
   <a class="button-link" href="https://ftctrekapp.cf/index.html"><i class="fa fa-google"></i> Login</a><br/>
   <a class="button-link" href="https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://ftctrekapp.cf"><i class="fa fa-google"></i> Logout</a><br/>
   <a class="button-link" href="mailto:goldenratiorobotics@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Contact Us</a>
