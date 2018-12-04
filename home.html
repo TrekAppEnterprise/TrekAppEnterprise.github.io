@@ -45,23 +45,67 @@
     color: #000000;
     background-color: #2583db;
 }
-.sidenav .closebtn {
+
+.closebtn {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.75em;
+  height: 0.75em;
+  position: relative;
+  border: none;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  font: normal 8em/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #1abc9c;
+}
+
+.closebtn::before {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.45em;
+  height: 0.1em;
   position: absolute;
-  margin-left: 50px;
-  top: 0;
-  right: 25px;
-  display:block;
-  box-sizing:border-box;
-  width:20px;
-  height:20px;
-  border-width:3px;
-  border-style: solid;
-  border-color:red;
-  border-radius:100%;
-  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
-  background-color:red;
-  box-shadow:0px 0px 5px 2px rgba(0,0,0,0.5);
-  transition: all 0.3s ease;
+  content: "";
+  top: 0.33em;
+  left: 0.155em;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #ffffff;
+  text-shadow: none;
+  -webkit-transform: rotateZ(45deg)   ;
+  transform: rotateZ(45deg)   ;
+}
+
+.closebtn::after {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.45em;
+  height: 0.1em;
+  position: absolute;
+  content: "";
+  top: 0.33em;
+  left: 0.155em;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #ffffff;
+  text-shadow: none;
+  -webkit-transform: rotateZ(-45deg)   ;
+  transform: rotateZ(-45deg)   ;
 }
 .openNav {
     border-radius: 25px;
